@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
 
 app.get('/sample_data', (req, res) => {
   const samepleData = {
-    username: 'hello world',
-    id: '1234',
+    username: 'Hola Attlaris',
+    id: '123456',
   };
 
   res.json(samepleData);
@@ -30,7 +30,7 @@ app.get('/sample_data', (req, res) => {
 // error handling
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something bad happened!');
+  res.status(500).send('Algo mal ha ocurrido!');
 });
 
 app.listen(port, ip);
